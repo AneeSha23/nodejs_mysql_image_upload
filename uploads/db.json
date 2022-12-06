@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "qweet6y",
+      "email": "qwer@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "truy6",
+      "email": "trygth"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    {
+      "product": "Bag",
+      "desc": "American Tourister8",
+      "quantity": 40,
+      "price": 5656,
+      "id": 1
+    },
+    {
+      "product": "rftgt",
+      "desc": "tfhbgy",
+      "quantity": 4,
+      "price": "324",
+      "id": 2
+    },
+    {
+      "product": "efbg",
+      "desc": "bhtfhr",
+      "quantity": 6546,
+      "price": "1223",
+      "id": 4
+    },
+    {
+      "product": "jhgfvgdcc",
+      "desc": "bcfvgb",
+      "quantity": 654,
+      "price": "12324",
+      "id": 5
+    },
+    {
+      "product": "dgder",
+      "desc": "frghgyrdeh",
+      "quantity": 66,
+      "price": "6445",
+      "id": 6
+    }
+  ]
+}
