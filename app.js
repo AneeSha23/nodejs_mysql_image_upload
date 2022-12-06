@@ -229,7 +229,7 @@ app.delete('/:id',(req,res)=>{
 })
 
 
-app.post('/:id',upload.single('profile'),(req,res)=>{
+app.put('/:id',upload.single('profile'),(req,res)=>{
     const url=req.protocol + "://" + req.get('host')
     console.log(url)
 
