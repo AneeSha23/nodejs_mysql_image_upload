@@ -48,23 +48,23 @@ const storage = multer.diskStorage({
 })
 
 const upload = multer({
-                storage:storage,      // storage: storage => keyword:var_name
-                limits:{
-                    fileSize: 1024*1024*5
-                },
-                fileFilter:(req,file,cb)=>{
-                    if (
-                        file.mimetype == 'image/png' ||
-                        file.mimetype == 'image/jpg' ||
-                        file.mimetype == 'image/jpeg' ||
-                        file.mimetype == 'image/jfif'
-                      ) {
-                        cb(null, true)
-                      } else {
-                        cb(null, false)
-                        return cb(new Error('Only .png, .jpg, .jfif and .jpeg format allowed!'))
-                      }
-                }
+                storage:storage      // storage: storage => keyword:var_name
+                // limits:{
+                //     fileSize: 1024*1024*5
+                // },
+                // fileFilter:(req,file,cb)=>{
+                //     if (
+                //         file.mimetype == 'image/png' ||
+                //         file.mimetype == 'image/jpg' ||
+                //         file.mimetype == 'image/jpeg' ||
+                //         file.mimetype == 'image/jfif'
+                //       ) {
+                //         cb(null, true)
+                //       } else {
+                //         cb(null, false)
+                //         return cb(new Error('Only .png, .jpg, .jfif and .jpeg format allowed!'))
+                //       }
+                // }
             
             
             })
@@ -100,7 +100,7 @@ app.get('/index',(req,res)=>{
 
 // create new data
 
-// index.html image upload input's name and single('name') should be same
+//in backend, index.html image upload input's name and single('name') should be same
 app.post('/',upload.single('profile'),(req,res)=>{
     const url=req.protocol + "://" + req.get('host')
     // console.log(url)
